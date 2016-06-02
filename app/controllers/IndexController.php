@@ -8,7 +8,7 @@ class IndexController extends ControllerBase
        parent::initialize();
     }
 
-    public function indexAction($param)
+    public function indexAction()
     {
         
     }

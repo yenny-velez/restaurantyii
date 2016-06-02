@@ -7,7 +7,7 @@ class Elements extends Component
 {
 	private $_menu = array(
 			array(
-				'caption'=>'INICIO',
+				'caption'=>'Home',
 				'controller'=>'index',
 				'class' => '',
 				'action'=>'index',
@@ -16,11 +16,11 @@ class Elements extends Component
 				'subitem' =>array()
 			),
 			array(
-				'caption'=>'NOSOTROS',
-				'controller'=>'',
+				'caption'=>'Menu',
+				'controller'=>'menu',
 				'class' => 'has-submenu',
 				'classSubmenu' => 'submenu',
-				'action'=>'',
+				'action'=>'comida_rapida',
 				'url' => '',
 				'subitem' =>array(
 					array(
@@ -39,49 +39,16 @@ class Elements extends Component
 				)				
 			),
 			array(
-				'caption'=>'La Compañía',
-				'controller'=>'',
+				'caption'=>'Ubicación',
+				'controller'=>'ubicacion',
 				'class' => 'has-submenu',
-				'action'=>'',
+				'action'=>'ubicacion',
 				'classSubmenu' => 'submenu',
-				'url' => '',
-				'subitem' =>array(
-					array(
-					'caption'=>'Urbanos',
-					'controller' =>'lacompania',
-					'action'=>'urbanos',
-					'url' => 'la-compañia/servicios-urbanos'
-					),
-					array(
-						'caption'=>'Mensajeros Urbanos',
-						'controller' =>'lacompania',
-						'action'=>'mensajeros_urbanos',
-						'url' => 'la-compañia/mensajeros-urbanos'
-					),
-					array(
-						'caption'=>'Domicilios Urbanos',
-						'controller' =>'lacompania',
-						'action'=>'domicilios_urbanos',
-						'url' => 'la-compañia/domicilios-urbanos'
-					),
-					array(
-						'caption'=>'Envíos Urbanos',
-						'controller' =>'lacompania',
-						'action'=>'envios_urbanos',
-						'url' => 'la-compañia/envios-urbanos'
-					),
-					array(
-						'caption'=>'API',
-						'controller' =>'lacompania',
-						'action'=>'api_urbanos',
-						'url' => 'la-compañia/api-urbanos'
-					)
-				)
-				
+				'url' => ''
 			),
 
 			array(
-				'caption'=>'Prensa',
+				'caption'=>'Blog',
 				'controller'=>'prensa',
 				'class' => '',
 				'action'=>'prensa',
@@ -91,7 +58,7 @@ class Elements extends Component
 			),
 
 			array(
-				'caption'=>'Trabaja con Nosotro',
+				'caption'=>'Reservas',
 				'controller'=>'trabaja',
 				'class' => '',
 				'action'=>'trabaja_nosotros',
@@ -100,6 +67,35 @@ class Elements extends Component
 				'subitem' =>array()
 			),
 
+			array(
+				'caption'=>'Cheff',
+				'controller'=>'trabaja',
+				'class' => '',
+				'action'=>'trabaja_nosotros',
+				'classSubmenu' => '',
+				'url' => 'trabaja-con-nosotros',
+				'subitem' =>array()
+			),
+
+			array(
+				'caption'=>'Noticias',
+				'controller'=>'trabaja',
+				'class' => '',
+				'action'=>'trabaja_nosotros',
+				'classSubmenu' => '',
+				'url' => 'trabaja-con-nosotros',
+				'subitem' =>array()
+			),
+
+			array(
+				'caption'=>'Galeria',
+				'controller'=>'trabaja',
+				'class' => '',
+				'action'=>'trabaja_nosotros',
+				'classSubmenu' => '',
+				'url' => 'trabaja-con-nosotros',
+				'subitem' =>array()
+			),
 		);
 
     public function getMenu()
