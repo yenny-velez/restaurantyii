@@ -1,111 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
-    {{ get_title() }}
+
+    <!-- Basic Page Needs
+  ================================================== -->
     <meta charset="utf-8">
-    <meta name="format-detection" content="telephone=no"/>
+    {{ get_title() }}
     <link rel="icon" href="images/favicon.jpg" type="image/x-icon">
-    {{ stylesheet_link('css/grid.css') }}
+    <meta name="author" content="www.zerotheme.com">
+    
+    <!-- Mobile Specific Metas
+  ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- CSS
+  ================================================== -->
+    {{ stylesheet_link('css/zerogrid.css') }}
     {{ stylesheet_link('css/style.css') }}
-    {{ stylesheet_link('css/camera.css') }}
-    {{ stylesheet_link('css/jquery.fancybox.css') }}
-
-    {{ javascript_include('js/jquery.js') }}
-    {{ javascript_include('js/jquery-migrate-1.2.1.js') }}
-    {{ javascript_include('js/device.min.js') }}
-
+    {{ stylesheet_link('css/slide.css') }}
+    {{ stylesheet_link('css/menu.css') }}
+    
+    <!-- Custom Fonts -->
+    {{ stylesheet_link('font-awesome/css/font-awesome.min.css?family=Halant:300,400', false) }}
+    
+    
 </head>
-
 <body>
-<div class="page">
-    <!--========================================================
-                              HEADER
-    =========================================================-->
+<div class="wrap-body">
+    <!--///////////////////////////////////////Top-->
+    <div class="top">
+        <div class="zerogrid">
+            <ul class="number f-left">
+                <li class="mail"><p>carolina.vc.94@hotmail.es</p></li>
+                <li class="phone"><p>315 293 57 10</p></li>
+            </ul>
+            <ul class="top-social f-right">
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <!--////////////////////////////////////Header-->
     <header>
-
-        <div class="camera_container">
-            <div id="camera" class="camera_wrap">
-                <div data-thumb="/images/slide01_thumb.jpg" data-src="/images/slide01.jpg">
-                    <div class="camera_caption fadeIn">
-                    </div>
-                </div>
-                <div data-thumb="/images/slide02_thumb.jpg" data-src="/images/slide02.jpg">
-                    <div class="camera_caption fadeIn">
-                    </div>
-                </div>
-                <div data-thumb="/images/slide03_thumb.jpg" data-src="/images/slide03.jpg">
-                    <div class="camera_caption fadeIn">
-                    </div>
-                </div>
-            </div>
-
-            <div class="brand wow fadeIn">
-                <h1 class="brand_name">
-                    <a href="./">Cafe</a>
-                </h1>
-            </div>
+        <div class="zerogrid">
+            <center><div class="logo"><img src="images/logo.png"></div></center>
         </div>
-        
-        <div class="toggle-menu-container">
-            <nav class="nav">
-                <div class="nav_title"></div>
-                <a class="sf-menu-toggle fa fa-bars" href="#"></a>
-                <ul class="sf-menu">
-                    <li class="active">
-                        <a href="./">Home</a>
-                    </li>
-                    <li>
-                        <a href="index-1.html">About</a>
-                        <ul>
-                            <li>
-                                <a href="#">Quisque nulla</a>
-                            </li>
-                            <li>
-                                <a href="#">Vestibulum libero</a>
-                                <ul>
-                                    <li>
-                                        <a href="#">Lorem</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Dolor</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Sit amet</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Vivamus eget nibh</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="index-2.html">What We Do</a>
-                    </li>
-                    <li>
-                        <a href="index-3.html">Menu</a>
-                    </li>
-                    <li>
-                        <a href="index-4.html">Contacts</a>
-                    </li>
-                </ul>
-            </nav>            
-        </div>
-
     </header>
-    <!--========================================================
-                              CONTENT
-    =========================================================-->
-    <main>
-        {{ content()}}
-    </main>
+    <div class="site-title">
+        <div class="zerogrid">
+            <div class="row">
+                <h2 class="t-center">Aplicacion para mayor efectividad en la Atencion</h2>
+            </div>
+        </div>
+    </div>
+    <!--//////////////////////////////////////Menu-->
+    <a href="#" class="nav-toggle">Toggle Navigation</a>
+    <nav class="cmn-tile-nav">
+        <ul class="clearfix">
+            <li class="colour-1"><a href="index.html">Home</a></li>
+            <li class="colour-2"><a href="menu.html">Menu</a></li>
+            <li class="colour-3"><a href="location.html">Location</a></li>
+            <li class="colour-4"><a href="archive.html">Blog</a></li>
+            <li class="colour-5"><a href="reservation.html">Reservation</a></li>
+            <li class="colour-6"><a href="staff.html">Our Staff</a></li>
+            <li class="colour-7"><a href="news.html">News</a></li>
+            <li class="colour-8"><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    
+    <div class="zerogrid">
+        <div class="callbacks_container">
+            <ul class="rslides" id="slider4">
+                <li>
+                    <img src="images/banner1.jpg" alt="">
+                    <div class="caption">
+                        <h2>We've got the best spareribs in town.</h2></br>
+                        <p>Nulla eget mauris quis elit mollis ornare vitae ut odio. Cras tincidunt, augue vitae sollicitudin commodo,quam elit varius est, et ornare ante massa quis tellus. Mauris nec lacinia nisl. </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/banner2.jpg" alt="">
+                    <div class="caption">
+                        <h2>If food is an experience, then you'll find it at the restaurant.</h2></br>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/banner3.jpg" alt="">
+                    <div class="caption">
+                        <h2>Enjoy our take-away menu.</h2></br>
+                        <p>At vero eos et accusam et justo duo dolores et ea rebum. Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+<!--////////////////////////////////////Container-->
+    {{ content()}}
 
-    <!--========================================================
-                              FOOTER
-    =========================================================-->
+<!--////////////////////////////////////Footer-->
     {{ partial('layouts/_footer')}}
-</div>
 
-{{ javascript_include('js/jquery.js') }}
-</body>
-</html>
+
+    <!-- js -->
+    <script src="js/classie.js"></script>
+    <script src="js/demo.js"></script>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/responsiveslides.min.js"></script>
+    <script>
+    $(function () {
+      // Slideshow 4
+      $("#slider4").responsiveSlides({
+        auto: true,
+        pager: false,
+        nav: false,
+        speed: 500,
+        namespace: "callbacks",
+        before: function () {
+          $('.events').append("<li>before event fired.</li>");
+        },
+        after: function () {
+          $('.events').append("<li>after event fired.</li>");
+        }
+      });
+    });
+    </script>
+</div>
+</body></html>
