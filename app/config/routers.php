@@ -9,13 +9,10 @@ $router = new Router();
 
 $router->add('/', 
     array(
-    'controller' => 'index',
+    'controller' => 'Index',
     'action' => 'index'
     )
 );
-
-
-
 
 return $router;
 
